@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  overflow-x: hidden; /* убирает горизонтальный скролл */
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   background: linear-gradient(120deg, #9933FF, #9966FF, #9999FF);
@@ -57,8 +61,9 @@ ul {
   min-height: 80px;
   display: flex;
   justify-content: center;
-  margin-left: 120px;
-  margin-top: 60px
+  align-items: center;
+  padding: 20px 0; 
+  margin-left: 0;
 }
       
 @media (max-width: 767px) {
@@ -117,9 +122,10 @@ header {
 
 .landing-page .content .container {
   display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
   align-items: center;
-  justify-content: space-between;
-  gap: 140px;
+  gap: 40px; 
   min-height: calc(100vh - 80px);
 }
       
@@ -167,6 +173,8 @@ header {
 }
       
 .landing-page .content .image img {
-  max-width: 120%;
-  margin-top: 50px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 50px auto 0 auto;
 }
