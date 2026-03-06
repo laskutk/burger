@@ -57,7 +57,7 @@ ul {
   min-height: 80px;
   display: flex;
   justify-content: center;
-  margin-left: 200px;
+  margin-left: 120px;
   margin-top: 60px
 }
       
@@ -167,6 +167,6 @@ header {
 }
       
 .landing-page .content .image img {
-  max-width: 100%;
+  max-width: 120%;
   margin-top: 50px;
 }
